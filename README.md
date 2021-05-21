@@ -1,10 +1,21 @@
 ## Crypto portfolio 
+This project is a CLI that parse a CSV file containing transaction details of crypto currency with following columns:
+ - timestamp: Integer number of seconds since the Epoch
+ - transaction_type: Either a DEPOSIT or a WITHDRAWAL
+ - token: The token symbol
+ - amount: The amount transacted
+
+The CLI will give out the latest porfolio based on `date` and currency `token`
+
+### Current commands:
+
+- `get-portfolio` - with arguements: path to csv file (Mandatory), with optionals: `--date` and `--token`
 ### How to start using the CLI
 At root:
 1. Added CryptoCompare API key into .env file
 2. Run `npm install -g .` to install the CLI globally
-3. Run `propine --help` to list all avaiable commands
-4. Run `propine get-portfolio` to get the latest portfolio
+3. Run `crypto --help` to list all avaiable commands
+4. Run `crypto get-portfolio` to get the latest portfolio
 
 ### Dependencies
 - `commander`: Easy to setup commands

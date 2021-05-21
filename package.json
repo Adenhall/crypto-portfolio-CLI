@@ -1,10 +1,10 @@
 {
-  "name": "Propine-interview-test",
+  "name": "crypto",
   "version": "1.0.0",
   "description": "",
   "main": "bin/app.ts",
   "bin": {
-    "propine": "./bin/app.ts"
+    "crypto": "./bin/app.ts"
   },
   "scripts": {
     "dev": "nodemon --exec ts-node src/app.ts",
